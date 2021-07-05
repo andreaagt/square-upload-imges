@@ -15,6 +15,8 @@ Python 3
 python version 3.9.5
 Version of the libraries are in Requirements.txt
 
+You need cloudinary credentials to upload the images
+
 
 ### Installing
 
@@ -28,6 +30,12 @@ To square all the images in ./images run:
 
     $ python resize_images.py
 
-To upload the new images created in ./new_images
+To upload the new images created in ./new_images, you need to create a config.py with the cloudinary credentials as follow:
+
+    config = { 
+      "cloud_name" : "874837483274837", 
+      "api_key" : "a676b67565c6767a6767d6767f676fe1",
+      "api_secret" : "your api_secret"
+    }
 
     $ python upload_img_for_cloudinary.py
